@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>VŨ TRUNG NGUYÊN</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+        <link href="./css/style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+        <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link href="./css/myprofile.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="./images/pokemonball.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+        <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    </head>
+    <body>
+        <nav>
+            <div class="brand">
+                <h2>Trang web của Nguyên</h2>
+            </div>
+            <ul>
+                <li><a href="./Trangchu.html"><i class="fa fa-home" aria-hidden="true"></i> Trang Chủ</a></li>
+                <li><a href="./myprofile.html"><i class="fa fa-info" aria-hidden="true"></i> My Profile</a></li>
+                <li class="dropdown"  title="Muốn học giỏi thì bấm vào!!">
+                    <a href=""><i class="fa fa-book" aria-hidden="true"></i> Learn Japanese &#9759;</a>
+                    <div class="dropdown-content">
+                        <a href="./learnjapaneseN5.html">N5</a>
+                        <a href="./learnjapaneseN4.html">N4</a>
+                        <a href="./learnjapaneseN3.html">N3</a>
+                        <a href="./learnjapaneseN2.html">N2</a>
+                        <a href="./learnjapaneseN1.html">N1</a>
+                    </div>
+                </li>
+                <li class="dropdown"  title="Muốn học giỏi thì bấm vào!!">
+                    <a href=""><i class="fa fa-telegram" aria-hidden="true"></i> My Projects &#9759;</a>
+                    <div class="dropdown-content">
+                        <a href="./graphic.html">Graphic Designer</a>
+                        <a href="#">Python</a>
+                        <a href="#">Javascript</a>
+                    </div>
+                </li>
+                <li><a href="./contact.html"><i class="fa fa-location-arrow" aria-hidden="true"></i> Contact</a></li>
+            </ul>
+        </nav>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <video width="1750" height="700" controls src="./images/video giới thiệu bản thân.mp4" autoplay loop muted playsinlin></video>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/bìa.jpg); font-size: 100px;">
+                    <marquee direction="left" style="background:orange; opacity: 0.6; margin-top: 250px;">
+                    <a href="https://www.animatedimages.org/cat-vietnam-flag-916.htm"><img src="https://www.animatedimages.org/data/media/916/animated-vietnam-flag-image-0022.gif" border="0" alt="animated-vietnam-flag-image-0022" /></a>
+                    Vũ Trung Nguyên
+                    <iconify-icon icon="emojione-v1:flag-for-vietnam"></iconify-icon>
+                    Wellcome to my website!!</marquee>
+                </div>
+                <div class="swiper-slide" style="background-image:url(./images/logoten-removebg-preview.png)" ></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prew"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+            const swiper=new Swiper('.swiper',{
+                loop:true,
+                effect:"trade",
+                speed:2000,
+                autoplay:{
+                    delay:10000
+                },
+                navigation:{
+                    nextEl:'.swiper-button-next',
+                    prevEl:'.swiper-button-prev',
+                },
+                pagination:{
+                el:'.swiper-pagination',
+                clickable:true,
+                type:'bullets',
+            }
+            });
+        </script>
+                    <form class="search">
+                        <input type="text" name="search" placeholder="Search gì        search đi" title="Vui lòng điền vào đây. Nhanh"><i class="fa-solid fa-magnifying-glass-minus"></i>
+                    </form>
+                    <div id="wrapper">
+                        <input type="checkbox" name="" class="switch-toggle" id="light-dark">
+                    </div>
+                    <script>
+                        var checkbox_toggle = document.getElementById('light-dark');
+                        checkbox_toggle.addEventListener('change', function(){
+                            // THêm class dark cho body
+                            document.body.classList.toggle('dark');
+                        });
+                    </script>
+        <main role="main">
+            <div class="area-portfolio">
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <div id="My Profile" class="MyPic" title="Đẹp trai đúng không!!"></div>
+                    </div>
+                    <div class="flex-item">
+                        <marquee behavior="alternate" class="content-title" style="margin-right: 210px;">ABOUT</marquee>
+                        <div class="content-portfolio">
+                            <div class="flex-item"></div>
+                            <p> 武中原 - VU TRUNG NGUYEN</p>
+                            <p>&nbsp;</p>
+                            <p>1994.09.09 生まれ ハイフォン市</p>
+                            <p>留学生</p>
+                            <p>&nbsp;</p>
+                            <p>出来れば平和な土地って岡山市で就職したいんです</p>
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <a href="tel08075225161">08075225161</a>
+                            <p class="link" style="color: orange;"><a href="https://www.facebook.com/willy99wonka/" target="_blank"><u>Click here to see more about the handsome boy</a></u></p>
+                            <p>好きな言葉：No Pain No Gain</p>
+                            <a href="./images/ヴチュングエン履歴書.docx" download>
+                                <br><button class="btn btn--CV">DOWNLOAD MY CV</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="area-company">
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <p class="content-title" style="margin-left: 180px">MY FAMILY</p>
+                        <div class="content-company">
+                            <p>&nbsp;</p>
+                            <p>お父さん　―　軍人</p>
+                            <p>叔母さん　―　軍人</p>
+                            <p>お兄さん　―　エンジニア</p>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <p><img class="flex-item-img" src="./images/ANHGIADINH.jpg" /></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="area-hobby1">
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <p><img class="flex-item-img" src="./images/ha-lan.jpg" /></p>
+                    </div>
+                    <div id="趣味" class="flex-item">
+                        <p class="content-title" style="margin-left: 240px">趣味!!</p>
+                        <div class="content-hobby">
+                            <p>水生魚の水槽を作る</p>
+                            <p>水槽を見ると安らぎを感じます</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="area-hobby2">
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <p class="content-title" style="margin-left: 120px">OUTDOOR!!</p>
+                        <div class="content-hobby">
+                            <p>BBQ,夏フェスなんかを楽しんでます</p>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <p><img id="国のこと" class="flex-item-img" src="./images/AnhBBQ.jpg" /></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="area-hobby3">
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <p><img class="flex-item-img" src="./images/7.jpg" /></p>
+                    </div>
+                    <div class="flex-item">
+                        <p class="content-title" style="margin-left: 240px">TRAVEL!!</p>
+                        <div class="content-hobby">
+                            <p>旅行に行くのが大好きです！</p>
+                            <div class="imgviewer-container">
+
+                                <div class="imgviewer-item"><img class="flex-item-img-mini" src="./images/1.jpg" /></div>
+                                <div class="imgviewer-item"><img class="flex-item-img-mini" src="./images/2.jpg" /></div>
+                                <div class="imgviewer-item"><img class="flex-item-img-mini" src="./images/3.jpg" /></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59658.012144782!2d106.66372720721384!3d20.846813503898602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a7af39e3f1ad3%3A0xa5ffc85ff87a07e8!2zSOG6o2kgUGjDsm5nLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2sjp!4v1669688380063!5m2!1svi!2sjp" 
+            width="1500" height="450" style="border:0;" text-align="center"; allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </main>
+    </body>
+</html>

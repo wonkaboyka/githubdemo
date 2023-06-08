@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: URL(/images/anhnenhoctiengnhat.jpg);
+    transition: var(--transition-effect);
+}
+* {
+    margin:0;
+    padding:0;
+}
+
+@media screen and (max-width: 2000px) {
+    Định dạng của các khối khi màn hình có chiều rộng nhỏ hơn 2000px;
+    }
+@media screen and (max-width: 480px) {
+    Định dạng của các khối khi màn hình có chiều rộng nhỏ hơn 480px;
+    }
+
+.content-title{
+    font-family: 'Brush Script MT', sans-serif;
+    font-size:4em;
+    margin:0 auto;
+}
+section.section1{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-size: cover;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: rgba(0,0,0,0.4);
+    padding: 0 100px ;
+    box-sizing: border-box;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12),
+    0 2px 2px rgba(0,0,0,0.12),
+    0 4px 4px rgba(0,0,0,0.12),
+    0 8px 8px rgba(0,0,0,0.12),
+    0 16px 16px rgba(0,0,0,0.12);
+    z-index: 99;
+}
+nav .brand{
+    float: left;
+    height: 100%;
+    line-height: 80px;
+}
+nav .brand h2{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+nav ul{
+    float: right;
+    display: flex;
+    margin:0;
+    padding: 0;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    position: relative;
+    display: block;
+    height: 80px;
+    line-height: 80px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s
+}
+nav ul li a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transform-origin: right;
+    z-index: -1;
+    transform: scaleX(0);
+    transition:  transform 0.5s;
+}
+nav ul li a:hover:before{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+nav ul li a:hover{
+    color: #262626;
+}
+
+li a, .dropbtn {
+    display: Inline-block;
+    color: #262626;
+    padding: 14px 110px;
+    text-decoration: none;
+    transition:  transform 0.5s;
+ }
+li a:hover, .dropdown:hover .dropbtn {
+    color: rgb(255, 0, 43);
+}
+li a:active, .dropdown:active .dropbtn {
+    color: rgb(255, 0, 43);
+}
+li.dropdown {
+    display: Inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    color: #262626;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+.dropdown-content a:hover {
+    color: #ff7600;
+    opacity: 0.7;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+section.section2{
+    padding: 150px;
+}
+
+.content-title{
+    font-family: 'Brush Script MT', sans-serif;
+    font-size:4em;
+    margin:0 auto;
+}
+
+:root{
+    --transition-effect: 0.25s cubic-bezier(.25,-0.59,.82,1.66) .3s;
+}
+
+.tailieu {
+        text-align: center;
+        position:relative;
+        top:300px;
+        }< br />
